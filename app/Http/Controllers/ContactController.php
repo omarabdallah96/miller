@@ -30,10 +30,7 @@ class ContactController extends Controller
     }
     public function store(Request $request)
     {
-        $validated = $request->validate([
-            'title' => 'required|unique:posts|max:255',
-            'body' => 'required',
-        ]);
+        
         return response()->json(['success'=>'Got Simple Ajax Request.']);
         
     }
